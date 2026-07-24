@@ -6,10 +6,6 @@ resources:
         - glob:
             include: ../employee/transformations/**
       schema: ${var.schema}
-      continuous: false
-      development: false
-      photon: true
       channel: CURRENT
       catalog: ${var.catalog}
       serverless: true
-      root_path: ../employee/transformations
