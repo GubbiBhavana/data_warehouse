@@ -4,7 +4,7 @@ resources:
       name: employee_pipeline
       libraries:
         - glob:
-            include: ../employee/transformations/*
+            include: ../employee/transformations/**
       schema: ${var.schema}
       continuous: false
       development: false
