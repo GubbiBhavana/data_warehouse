@@ -21,9 +21,9 @@ resources:
             pipeline_id: ${resources.pipelines.employee_pipeline.id}
       parameters:
         - name: id
-          default: <MISSING>
+          default: "<MISSING>"
         - name: name
-          default: <MISSING>
+          default: "<MISSING>"
       queue:
         enabled: true
         
