@@ -19,10 +19,13 @@ resources:
         - task_key: run_employee_pipeline
           pipeline_task: 
             pipeline_id: ${resources.pipelines.employee_pipeline.id}
+            pipeline_parameters:
+              id: "{{job.parameters.id}}"
+              name: "{{job.parameters.name}}"
       parameters:
         - name: id
-          default: "<MISSING>"
+          default: "<MISSING_FROM_JOB>"
         - name: name
-          default: "<MISSING>"
+          default: "<MISSING_FROM_JOB>"
       queue:
         enabled: true

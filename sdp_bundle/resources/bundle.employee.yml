@@ -9,3 +9,6 @@ resources:
       channel: CURRENT
       catalog: ${var.catalog}
       serverless: true
+      configuration:
+        id: "<MISSING_FROM_PIPELINE>"
+        name: "<MISSING_FROM_PIPELINE>"
